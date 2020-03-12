@@ -10,12 +10,12 @@ const overlay = document.querySelector(".overlay");
 // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
 const scrollFunction = () => {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    navbar.style.padding = "0rem 0rem";
-    navbar.style.backgroundColor = "#FFFFFF"
+    navbar.style.padding = ".5rem 0rem";
+    navbar.style.backgroundColor = "rgba(255, 255, 255, .98)";
     // document.getElementById("logo").style.fontSize = "25px";
   } else {
-    navbar.style.padding = "2rem 0rem";
-    navbar.style.backgroundColor = "transparent"
+    navbar.style.padding = "1.5rem 0rem";
+    navbar.style.backgroundColor = "rgba(0, 0, 0, .1)";
     // document.getElementById("logo").style.fontSize = "35px";
   }
 };
