@@ -1,5 +1,93 @@
 @import "reset.css";
 
-h2 {
-  color: red;
+.main-container {
+  min-height: 200vh;
+  background-color: bisque;
+}
+
+/* NAVBAR ============================================================= */
+
+.navbar {
+  position: fixed;
+  overflow: hidden;
+  background-color: transparent;
+  padding: 2rem 0rem;
+  transition: 0.4s;
+  width: 100%;
+  z-index: 10;
+  top: 0;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 1.4rem 1.6rem;
+  text-decoration: none;
+  font-size: 1.7rem;
+}
+
+.navbar a:not(:first-child):hover {
+  /* background-color: #ddd; */
+  color: black;
+}
+
+.navbar .menu-icon {
+  display: none;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {
+    display: none;
+  }
+  .navbar a.menu-icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* OVERLAY ========================================================= */
+
+.overlay {
+  width: 100%;
+  height: 0;
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  background-color: rgba(0, 0, 0, 1);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.overlay a {
+  display: block;
+  padding: 0.8rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  color: #f1f1f1;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .close-btn {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 4rem;
+  color: #f1f1f1;
 }
