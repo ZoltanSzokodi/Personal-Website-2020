@@ -5,6 +5,7 @@ const menuIcon = document.querySelector(".menu-icon");
 const navbarLogo = document.querySelector(".navbar-logo");
 const closeBtn = document.querySelector(".close-btn");
 const overlay = document.querySelector(".overlay");
+const overlayLinks = document.querySelectorAll(".overlay-link");
 
 
 // EVENT LISTENER FUNCTIONS ========================================
@@ -50,6 +51,8 @@ const closeNav = () => {
 window.addEventListener("scroll", scrollFunction);
 menuIcon.addEventListener("click", openNav);
 closeBtn.addEventListener("click", closeNav);
+overlayLinks.forEach(link => link.addEventListener("click", closeNav));
+
 
 
 

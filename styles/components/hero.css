@@ -1,6 +1,6 @@
 .hero-container {
   width: 100%;
-  max-height: 110vh;
+  height: max-content;
   overflow: hidden;
   position: relative;
 }
@@ -11,7 +11,7 @@
 
 .hero-container > h1 {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   color: rgba(255, 255, 255, 0.8);
   font-size: 4vw;
@@ -25,7 +25,7 @@
 
 .hero-container > h2 {
   position: absolute;
-  top: 58%;
+  top: 47%;
   left: 50%;
   color: rgba(255, 255, 255, 0.8);
   font-size: 1.5vw;
@@ -39,8 +39,34 @@
 
 .hero-logo {
   position: absolute;
-  top: 38%;
+  top: 30%;
   left: 50%;
   width: 7%;
   transform: translate(-50%, -50%);
+}
+
+.welcome-msg {
+  height: 10vh;
+  width: 30vw;
+  position: absolute;
+  top: 65%;
+  left: 7%;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.1vw;
+}
+
+.welcome-social-links {
+  display: flex;
+}
+
+.welcome-social-link {
+  font-size: 2.5vw;
+  padding: 2rem 2rem 2rem 0;
+  cursor: pointer;
+  transition: 0.2s;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.welcome-social-link:hover {
+  transform: scale(1.1);
 }
