@@ -1,0 +1,53 @@
+.overlay {
+  width: 0;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  /* background-color: rgba(0, 0, 0, 1); */
+  background-color: rgba(0, 33, 41, 1);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 17%;
+  width: 100%;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.overlay a {
+  display: block;
+  padding: 0.8rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  color: rgba(255, 255, 255, 0.8);
+  transition: 0.3s;
+}
+
+.overlay-content-header {
+  margin-bottom: 2.5rem;
+}
+
+.overlay-logo {
+  max-width: 5rem;
+  margin: 0 auto;
+}
+
+.overlay-title {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  letter-spacing: 0.5rem;
+}
+
+.overlay .close-btn {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 2.5rem;
+  color: rgba(255, 255, 255, 0.8);
+}

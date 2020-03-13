@@ -1,0 +1,9 @@
+@import "reset.css";
+@import "./components/navbar.css";
+@import "./components/menu-overlay.css";
+@import "./components/hero.css";
+
+.main-container {
+  min-height: auto;
+  background-color: rgba(0, 33, 41, 1);
+}

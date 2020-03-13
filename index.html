@@ -4,43 +4,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/styles/style.css">
+  <link rel="stylesheet" href="/styles/main.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
   <title>Zoltan Szokodi</title>
 </head>
 
 <body>
-  <!-- <div class="main-container">
-    <div class="logo-container"></div>
-    <div class="navbar">
-      <nav class="navbar__nav">
-        <ul class="navbar__nav__links">
-          <li><a href="#">about</a></li>
-          <li><a href="#">projects</a></li>
-          <li><a href="#">contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </div> -->
-
   <div class="main-container">
 
     <div class="navbar">
-      <a href="#">LOGO</a>
-      <a href="#">about</a>
-      <a href="#">projects</a>
-      <a href="#">contact</a>
-      <a href="javascript:void(0);" class="menu-icon">
-        <ion-icon name="menu"></ion-icon>
-      </a>
+      <div class="navbar-links-container">
+        <a class="navbar-link" href="#">
+          <img class="navbar-logo rotating" src="./images/cubelogo.png">
+        </a>
+        <a class="navbar-link" href="#">about</a>
+        <a class="navbar-link" href="#">projects</a>
+        <a class="navbar-link" href="#">contact</a>
+      </div>
+      <ion-icon class="menu-icon" name="menu"></ion-icon>
     </div>
 
     <div class="overlay">
       <a href="javascript:void(0)" class="close-btn">
-        <ion-icon name="close"></ion-icon>
+        <ion-icon name="close-circle-outline"></ion-icon>
       </a>
       <div class="overlay-content">
+        <div class="overlay-content-header">
+          <img class="overlay-logo" src="./images/cubelogo.png">
+          <h3 class="overlay-title">menu</h3>
+        </div>
         <a href="#">about</a>
         <a href="#">projects</a>
         <a href="#">contact</a>
@@ -48,9 +41,10 @@
     </div>
 
     <div class="hero-container">
-      <img src="./images/technology-banner.jpg" alt="hero image of computer">
-      <h1>welcome to my portfolio</h1>
-      <h2>zoltan.szokodi</h2>
+      <img src="./images/abstract-banner.jpg" alt="hero image of computer">
+      <img class="hero-logo" src="./images/cubelogo.png">
+      <h1>zoltan.szokodi</h1>
+      <h2>your developer</h2>
     </div>
 
   </div>

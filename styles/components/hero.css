@@ -1,0 +1,46 @@
+.hero-container {
+  width: 100%;
+  max-height: 110vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-container > img {
+  filter: brightness(80%);
+}
+
+.hero-container > h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 4vw;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  letter-spacing: 0.8rem;
+}
+
+.hero-container > h2 {
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5vw;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  letter-spacing: 0.8rem;
+}
+
+.hero-logo {
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  width: 7%;
+  transform: translate(-50%, -50%);
+}
