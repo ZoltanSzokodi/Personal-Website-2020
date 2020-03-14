@@ -25,6 +25,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 26vh;
+  padding: 1rem;
 }
 
 .hero-logo {
@@ -37,7 +38,7 @@
   text-align: center;
   color: rgba(255, 255, 255, 0.9);
   text-transform: uppercase;
-  letter-spacing: 1rem;
+  letter-spacing: 0.9rem;
 }
 
 .hero-title-container > h2 {
@@ -54,11 +55,12 @@
   flex-direction: column;
   align-self: flex-start;
   margin: 4vw;
+  padding: 1rem;
   margin-top: 20vh;
   width: max-content;
   color: rgba(255, 255, 255, 0.9);
-  font-size: 1.1vw;
-
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
   opacity: 0;
   transform: translateY(4rem);
   transition: transform 0.4s 0.25s cubic-bezier(0, 1, 0.3, 1), opacity 0.3s 0.25s ease-out;
@@ -83,6 +85,7 @@
   background-color: white;
   color: black;
   padding: 1.5rem;
+  font-size: 1vw;
   margin: 0 2vw;
   border-radius: 4px;
 }
@@ -93,7 +96,7 @@
 
 .welcome-social-link {
   font-size: 3vw;
-  margin: 2vh 0 0 2vw;
+  margin: 2vh 0 0 1.5vw;
   cursor: pointer;
   transition: 0.2s;
   color: rgba(255, 255, 255, 0.9);
@@ -113,18 +116,19 @@
   .hero-title-container > h2 {
     font-size: 4vw;
   }
-  .welcome-msg {
-    font-size: 2vw;
+  .welcome-msg > h3 {
+    font-size: 1.5vw;
   }
   .welcome-social-link {
     font-size: 5vw;
-    padding: 3vw 3vw 3vw 0;
+    padding: 2vw 2vw 2vw 0;
   }
 }
 
 @media screen and (max-width: 700px) {
-  .welcome-msg {
-    font-size: 2.8vw;
+  .welcome-msg > h3 {
+    padding: 1.5rem;
+    font-size: 2vw;
   }
   .welcome-social-link {
     font-size: 10vw;
