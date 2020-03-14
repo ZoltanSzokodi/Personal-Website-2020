@@ -6,7 +6,7 @@
   justify-content: flex-start;
   align-items: center;
   overflow: hidden;
-  background-image: url("https://cdn.pixabay.com/photo/2016/03/25/01/21/abstract-1278017_1280.jpg");
+  background-image: url("../../images/abstract-banner.jpg");
   background-size: cover;
   background-position: center;
   filter: brightness(90%);

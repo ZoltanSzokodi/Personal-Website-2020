@@ -18,7 +18,7 @@ const showPage = () => {
 };
 
 const loadPage = () => {
-  setTimeout(showPage, 3000);
+  setTimeout(showPage, 2000);
 };
 
 loadPage();
@@ -54,10 +54,12 @@ const scrollFunction = () => {
 
 const openNav = () => {
   overlay.style.width = "100%";
+  overlay.style.opacity = "1";
 };
 
 const closeNav = () => {
   overlay.style.width = "0%";
+  overlay.style.opacity = "0";
 };
 
 
