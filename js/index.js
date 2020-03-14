@@ -1,4 +1,7 @@
 // QUERY SELECTORS =================================================
+const loaderPage = document.querySelector(".loader-page");
+const mainContainer = document.querySelector(".main-container");
+
 const navbar = document.querySelector(".navbar");
 const navbarLinks = document.querySelectorAll(".navbar-link");
 const menuIcon = document.querySelector(".menu-icon");
@@ -8,6 +11,17 @@ const overlay = document.querySelector(".overlay");
 const overlayLinks = document.querySelectorAll(".overlay-link");
 const welcomeMsg = document.querySelector(".welcome-msg");
 
+// Spinner before page load
+const showPage = () => {
+  loaderPage.style.display = "none";
+  mainContainer.style.display = "block";
+};
+
+const loadPage = () => {
+  setTimeout(showPage, 3000);
+};
+
+loadPage();
 
 // EVENT LISTENER FUNCTIONS ========================================
 const toggleColor = (color, action) => {
@@ -25,7 +39,7 @@ const scrollFunction = () => {
     navbar.style.padding = ".5rem 1.5rem";
     navbar.style.backgroundColor = "rgba(255, 255, 255, .95)";
     navbarLogo.src = "./images/cubelogodark.png"
-    welcomeMsg.classList.add("is-visible")
+    welcomeMsg.classList.add("is-visible");
     // sneaky go-around to fool javascript (changing the font-color and the :before pseudo class background-color)
     toggleColor("rgba(0, 0, 0, 1)", "dark");
   }
