@@ -6,6 +6,6 @@
 @import "./components/about.css";
 
 .main-container {
-  min-height: auto;
+  min-height: 200vh;
   background-color: rgba(0, 33, 41, 1);
 }

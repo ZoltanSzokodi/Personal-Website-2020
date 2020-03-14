@@ -67,9 +67,14 @@
   display: none;
 }
 
+.menu-icon > h4 {
+  letter-spacing: 0.2rem;
+  margin-left: 1rem;
+}
+
 @media screen and (max-width: 600px) {
   .navbar {
-    background-color: transparent !important;
+    background-color: rgba(0, 0, 0, 0.4) !important;
     padding: 2rem !important;
   }
 
@@ -79,11 +84,8 @@
   }
 
   .menu-icon {
-    float: right;
     display: flex;
-    font-size: 2.5rem;
-    color: rgba(255, 255, 255, 0.9) !important;
-    padding: 0.5rem !important;
-    margin: 0;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.9);
   }
 }
