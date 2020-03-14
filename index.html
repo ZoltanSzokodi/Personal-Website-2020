@@ -3,7 +3,19 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Viewport for responsive web design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <!-- Meta Description -->
+  <meta name="description" content="zoltan szokodi's portfolio page">
+  <!-- Apple Touch Icon (at least 200x200px) -->
+  <link rel="apple-touch-icon" href="./images/cubelogodark.png">
+  <!-- To run web application in full-screen -->
+  <!-- Microsoft Tiles -->
+  <meta name="msapplication-config" content="browserconfig.xml">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <!-- Status Bar Style (see Supported Meta Tags below for available values) -->
+  <!-- Has no effect unless you have the previous meta tag -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <link rel="stylesheet" href="/styles/main.css">
   <link rel='icon' href='./images/cubelogodark.png' type='image/x-icon' />
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
@@ -16,23 +28,23 @@
 
     <!-- Navbar ======================================================== -->
     <div class="navbar">
-      <div class="navbar-links-container">
+      <nav class="navbar-links-container">
         <a class="navbar-link" href="#">
           <img class="navbar-logo rotating" src="./images/cubelogo.png">
         </a>
         <a class="navbar-link" href="#about">about</a>
         <a class="navbar-link" href="#">projects</a>
         <a class="navbar-link" href="#">contact</a>
-      </div>
+      </nav>
       <!-- <ion-icon class="menu-icon" name="menu"></ion-icon> -->
-      <div class="menu-icon">
+      <nav class="menu-icon">
         <img class="navbar-logo rotating" src="./images/cubelogo.png">
         <h4>menu</h4>
-      </div>
+      </nav>
     </div>
 
     <!-- Menu overlay (only for mobile view) =========================== -->
-    <div class="overlay">
+    <nav class="overlay">
       <a href="javascript:void(0)" class="close-btn">
         <ion-icon name="close-circle-outline"></ion-icon>
       </a>
@@ -45,10 +57,10 @@
         <a class="overlay-link" href="#">projects</a>
         <a class="overlay-link" href="#">contact</a>
       </div>
-    </div>
+    </nav>
 
     <!-- Hero ======================================================== -->
-    <div class="hero-container">
+    <header class="hero-container">
       <!-- <img class="hero-img" src="./images/abstract-banner.jpg" alt="hero image of computer"> -->
       <!-- <img class="hero-img" src="https://cdn.pixabay.com/photo/2016/03/25/01/21/abstract-1278017_1280.jpg"
         alt="hero image of computer"> -->
@@ -62,20 +74,20 @@
         <img src="./images/profile-min.jpg" alt="my picture">
         <h3>welcome to my personal portfolio! <br> please check out my Github and LinkedIn</h3>
         <div class="welcome-social-links">
-          <a href="https://www.linkedin.com/in/zoltan-szabi-szokodi/" target="_blank">
+          <a href="https://www.linkedin.com/in/zoltan-szabi-szokodi/" rel="noopener" target="_blank">
             <ion-icon class="welcome-social-link" name="logo-linkedin"></ion-icon>
           </a>
-          <a href="https://github.com/ZoltanSzokodi" target="_blank">
+          <a href="https://github.com/ZoltanSzokodi" rel="noopener" target="_blank">
             <ion-icon class="welcome-social-link" name="logo-octocat"></ion-icon>
           </a>
         </div>
       </div>
-    </div>
+    </header>
 
     <!-- About ======================================================== -->
-    <div class="about-container" id="about">
+    <section class="about-container" id="about">
 
-    </div>
+    </section>
 
   </div>
 

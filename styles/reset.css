@@ -1,6 +1,7 @@
 /* global font-size */
 html {
   font-size: 67.5%;
+  scroll-behavior: smooth;
 }
 
 /* Box sizing rules */
@@ -37,7 +38,6 @@ dd {
 /* Set core body defaults */
 body {
   min-height: 100vh;
-  scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   font-family: "Montserrat", sans-serif;

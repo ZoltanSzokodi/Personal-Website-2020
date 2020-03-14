@@ -128,7 +128,7 @@
 @media screen and (max-width: 700px) {
   .welcome-msg > h3 {
     padding: 1.5rem;
-    font-size: 2vw;
+    font-size: 2.5vw;
   }
   .welcome-social-link {
     font-size: 10vw;
