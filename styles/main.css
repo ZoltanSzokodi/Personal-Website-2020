@@ -6,9 +6,12 @@
 @import "./components/about.css";
 @import "./components/scrollbar.css";
 @import "./components/loader-page.css";
+@import "./components/projects.css";
+@import "./components/page-top-btn.css";
 
 .main-container {
   display: none;
-  min-height: 200vh;
+  position: relative;
+  min-height: auto;
   background-color: rgba(0, 33, 41, 1);
 }

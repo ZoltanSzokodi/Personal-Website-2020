@@ -13,6 +13,7 @@ const welcomeMsg = document.querySelector(".welcome-msg");
 const aboutContainer = document.querySelector(".about-container");
 
 const elementsToShow = document.querySelectorAll('.show-on-scroll');
+const pageTopBtn = document.querySelector(".page-top-icon");
 
 // Spinner before page load
 const showPage = () => {
@@ -43,6 +44,7 @@ const scrollFunction = () => {
     navbar.style.backgroundColor = "rgba(255, 255, 255, .95)";
     navbarLogo.src = "./images/cubelogodark.png"
     welcomeMsg.classList.add("is-visible");
+    pageTopBtn.style.opacity = 1;
     // sneaky go-around to fool javascript (changing the font-color and the :before pseudo class background-color)
     toggleColor("rgba(0, 0, 0, 1)", "dark");
   }
@@ -50,6 +52,7 @@ const scrollFunction = () => {
     navbar.style.padding = "1.5rem";
     navbar.style.backgroundColor = "transparent";
     navbarLogo.src = "./images/cubelogo.png";
+    pageTopBtn.style.opacity = 0;
     // sneaky go-around to fool javascript (changing the font-color and the :before pseudo class background-color)
     toggleColor("rgba(255, 255, 255, 1)", "light");
   }
