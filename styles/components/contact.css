@@ -1,0 +1,27 @@
+.contact-container {
+  width: 100%;
+  min-height: 70vh;
+  background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-left,
+.contact-right {
+  width: 50%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-left {
+  background-color: #f1f1f1;
+}
+
+.contact-email,
+.additional-info {
+  height: 15vh;
+  width: 50%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}

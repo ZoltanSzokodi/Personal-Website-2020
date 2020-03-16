@@ -41,7 +41,7 @@ const toggleColor = (color, action) => {
 const scrollFunction = () => {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     navbar.style.padding = ".5rem 1.5rem";
-    navbar.style.backgroundColor = "rgba(255, 255, 255, .95)";
+    navbar.style.backgroundColor = "rgba(255, 255, 255, .98)";
     navbarLogo.src = "./images/cubelogodark.png"
     welcomeMsg.classList.add("is-visible");
     pageTopBtn.style.opacity = 1;

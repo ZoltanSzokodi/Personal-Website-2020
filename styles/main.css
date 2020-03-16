@@ -8,6 +8,8 @@
 @import "./components/loader-page.css";
 @import "./components/projects.css";
 @import "./components/page-top-btn.css";
+@import "./components/contact.css";
+@import "./components/footer.css";
 
 .main-container {
   display: none;
