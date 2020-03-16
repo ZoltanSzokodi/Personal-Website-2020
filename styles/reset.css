@@ -2,7 +2,8 @@
 html {
   font-size: 67.5%;
   scroll-behavior: smooth;
-  background-color: rgba(0, 33, 41, 1);
+  /* background-color: rgba(0, 33, 41, 1); */
+  background-color: #ffffff;
 }
 
 /* Box sizing rules */
