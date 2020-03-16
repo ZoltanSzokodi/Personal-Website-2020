@@ -6,6 +6,7 @@
   justify-content: center;
   align-items: center;
   background-color: #ffffff;
+  overflow: hidden;
 }
 
 .about-attributes-container {
@@ -32,6 +33,7 @@
   font-size: 2rem;
   text-transform: uppercase;
   color: #4e5056;
+  letter-spacing: 0.8rem;
 }
 
 .attribute > h3 {
@@ -50,7 +52,7 @@
 }
 
 .about-container > img {
-  width: 70vw;
+  width: 60vw;
   padding: 0;
 
   opacity: 0;

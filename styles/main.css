@@ -12,6 +12,6 @@
 .main-container {
   display: none;
   position: relative;
-  min-height: auto;
+  height: auto;
   background-color: rgba(0, 33, 41, 0.92);
 }
