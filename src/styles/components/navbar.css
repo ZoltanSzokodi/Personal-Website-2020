@@ -1,12 +1,20 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 .navbar {
   position: fixed;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 1.5rem;
   background-color: transparent;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s;
   width: 100%;
   z-index: 10;
@@ -14,7 +22,11 @@
 }
 
 .navbar-links-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
   width: 100%;
   padding: 1.5rem 0;
@@ -43,7 +55,11 @@
   background-color: rgba(255, 255, 255, 0.9);
   visibility: hidden;
   border-radius: 2px;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
   transform: scaleX(0);
+  -webkit-transition: 0.25s linear;
+  -o-transition: 0.25s linear;
   transition: 0.25s linear;
 }
 
@@ -55,6 +71,8 @@
 .navbar-link:not(:first-child):hover:before,
 .navbar-link:not(:first-child):focus:before {
   visibility: visible;
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
   transform: scaleX(1);
 }
 
@@ -84,7 +102,11 @@
   }
 
   .menu-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     color: rgba(255, 255, 255, 0.9);
   }

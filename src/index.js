@@ -1,3 +1,16 @@
+// Importing dependencies for webpack
+import "./styles/main.css";
+import lightlogo from "./images/cubelogo.png";
+import darklogo from "./images/cubelogodark.png";
+import "./images/abstract-banner.jpg";
+import "./images/bookstore.png";
+import "./images/budget.png";
+import "./images/mytinerary.png";
+import "./images/news.png";
+import "./images/nysl.png";
+import "./images/tgif.png";
+
+
 // QUERY SELECTORS =================================================
 const loaderPage = document.querySelector(".loader-page");
 const mainContainer = document.querySelector(".main-container");
@@ -40,7 +53,7 @@ const scrollFunction = () => {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     navbar.style.padding = ".5rem 1.5rem";
     navbar.style.backgroundColor = "rgba(255, 255, 255, .98)";
-    navbarLogo.src = "./images/cubelogodark.png"
+    navbarLogo.src = darklogo;
     welcomeMsg.classList.add("is-visible");
     pageTopBtn.style.opacity = 1;
     // sneaky go-around to fool javascript (changing the font-color and the :before pseudo class background-color)
@@ -49,7 +62,7 @@ const scrollFunction = () => {
   else {
     navbar.style.padding = "1.5rem";
     navbar.style.backgroundColor = "transparent";
-    navbarLogo.src = "./images/cubelogo.png";
+    navbarLogo.src = lightlogo;
     pageTopBtn.style.opacity = 0;
     // sneaky go-around to fool javascript (changing the font-color and the :before pseudo class background-color)
     toggleColor("rgba(255, 255, 255, 1)", "light");
