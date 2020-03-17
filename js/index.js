@@ -1,7 +1,6 @@
 // QUERY SELECTORS =================================================
 const loaderPage = document.querySelector(".loader-page");
 const mainContainer = document.querySelector(".main-container");
-
 const navbar = document.querySelector(".navbar");
 const navbarLinks = document.querySelectorAll(".navbar-link");
 const menuIcon = document.querySelector(".menu-icon");
@@ -11,7 +10,6 @@ const overlay = document.querySelector(".overlay");
 const overlayLinks = document.querySelectorAll(".overlay-link");
 const welcomeMsg = document.querySelector(".welcome-msg");
 const aboutContainer = document.querySelector(".about-container");
-
 const elementsToShow = document.querySelectorAll('.show-on-scroll');
 const pageTopBtn = document.querySelector(".page-top-icon");
 
